@@ -3,7 +3,7 @@ set -e
 set -x
 
 # Install Python and Ruby
-apt-get install -y --no-install-recommends python3 python3-pip ruby
+apt-get update && apt-get install -y --no-install-recommends python3 python3-pip ruby
 
 # Install pleaserun
 gem install pleaserun
