@@ -12,5 +12,6 @@ gem install pleaserun
 pip3 install 'setuptools>=38.6.0'
 pip3 install docker-watchdog
 
-# Install the docker-watchdog startup service
+# Install and enable the docker-watchdog startup service
 docker-watchdog --install
+systemctl enable docker-watchdog
