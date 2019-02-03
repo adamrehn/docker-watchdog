@@ -38,6 +38,7 @@ def main():
 		print('Inactivity timeout:         ' + format_time(config.get('timeout')))
 		print('Billing granularity:        ' + format_time(config.get('billing')))
 		print('Cost-effective percentage:  {:.0f}%'.format(config.get('percentage') * 100.0))
+		sys.stdout.flush()
 		
 		# Start the watchdog
 		watchdog.start()
