@@ -95,8 +95,8 @@ The location of the JSON configuration file is based on the operating system and
 
 - Under Windows: `%APPDATA%\docker-watchdog\config.json`
 - Under macOS and Linux:
-  - If the `$HOME` environment variable is available: `$HOME/.config/docker-watchdog/config.json`
-  - If the `$HOME` environment variable is not available: `/etc/docker-watchdog/config.json`
+  - If running as a non-root user: `$HOME/.config/docker-watchdog/config.json`
+  - If running as the root user: `/etc/docker-watchdog/config.json`
 
 The available configuration settings are as follows:
 

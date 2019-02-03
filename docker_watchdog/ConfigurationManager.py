@@ -12,7 +12,7 @@ class ConfigurationManager(object):
 		'''
 		if platform.system() == 'Windows':
 			return os.path.join(os.environ['APPDATA'], 'docker-watchdog')
-		elif 'HOME' in os.environ:
+		elif os.getuid() != 0:
 			return os.path.join(os.environ['HOME'], '.config', 'docker-watchdog')
 		else:
 			return '/etc/docker-watchdog'
