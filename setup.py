@@ -7,7 +7,7 @@ with open(abspath(join(dirname(__file__), 'README.md')), 'rb') as readmeFile:
 
 setup(
 	name='docker-watchdog',
-	version='0.0.2',
+	version='0.0.3',
 	description='Service to perform automatic shutdown of idle container hosts',
 	long_description=__readme__,
 	long_description_content_type='text/markdown',
