@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+# Install Python and Ruby
+apt-get install -y --no-install-recommends python3 python3-pip ruby
+
+# Install pleaserun
+gem install pleaserun
+
+# Install docker-watchdog
+pip3 install docker-watchdog
+
+# Install the docker-watchdog startup service
+docker-watchdog --install

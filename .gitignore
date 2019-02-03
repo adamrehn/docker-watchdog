@@ -1,0 +1,6 @@
+docker_watchdog/__pycache__
+.vscode
+build
+dist
+*.egg-info
+*.pyc
