@@ -8,6 +8,7 @@ apt-get install -y --no-install-recommends python3 python3-pip ruby
 gem install pleaserun
 
 # Install docker-watchdog
+pip3 install 'setuptools>=38.6.0'
 pip3 install docker-watchdog
 
 # Install the docker-watchdog startup service

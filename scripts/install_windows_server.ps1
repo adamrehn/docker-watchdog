@@ -12,6 +12,7 @@ choco install -y python
 refreshenv
 
 # Install docker-watchdog
+pip install "setuptools>=38.6.0"
 pip install docker-watchdog
 
 # Install the docker-watchdog startup service
