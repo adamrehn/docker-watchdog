@@ -62,7 +62,7 @@ The background service will then start automatically the next time the host syst
 
 ### Installation scripts for cloud servers
 
-To simplify the setup process for cloud servers, the [scripts](https://github.com/adamrehn/docker-watchdog/blob/master/scripts/) directory contains installation scripts for common Docker container host platforms. The scripts automatically install docker-watchdog and its dependencies, and register the docker-watchdog startup service.
+To simplify the setup process for cloud servers, the [scripts](https://github.com/adamrehn/docker-watchdog/tree/master/scripts) directory contains installation scripts for common Docker container host platforms. The scripts automatically install docker-watchdog and its dependencies, and register the docker-watchdog startup service.
 
 Scripts are provided for the following platforms:
 
