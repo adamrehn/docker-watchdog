@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 set -e
+set -x
 
 # Install Python and Ruby
 apt-get install -y --no-install-recommends python3 python3-pip ruby
