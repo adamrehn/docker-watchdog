@@ -64,7 +64,7 @@ class Installation(object):
 			# Under macOS and Linux, use pleaserun to generate and install the startup script
 			try:
 				subprocess.run(['pleaserun', '--install', '--overwrite', '--name', 'docker-watchdog'] + command, check=True)
-			except Exception as e:
+			except Exception as err:
 				
 				# Propagate any exception details without the backtrace
 				Installation._propagateError(err,
