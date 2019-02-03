@@ -46,8 +46,9 @@ class Watchdog(object):
 			if self._docker is None:
 				try:
 					self._docker = docker.client.from_env()
+					self._docker.ping()
 				except:
-					pass
+					self._docker = None
 			
 			# If we have a connection then perform a sampling run
 			if self._docker is not None:
